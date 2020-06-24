@@ -1,0 +1,24 @@
+.banner {
+	margin-bottom: 200px;
+	
+	.banner-img {
+		width: 100%;
+		display: block;
+		height: 500px;
+		object-fit: cover;	
+	}
+
+	.banner-body {
+		background-color: $white;
+		padding: 40px;
+		box-shadow: $raised-shadow;
+		margin-top: -150px;
+		grid-column: span 6;
+	}
+
+	&:nth-of-type(odd) {
+		.banner-body {
+			grid-column: 7 / span 6;
+		}
+	}
+}

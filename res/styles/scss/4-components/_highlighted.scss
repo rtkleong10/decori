@@ -1,0 +1,16 @@
+.highlighted {
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		position: absolute;
+		display: block;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: $light-red;
+		content: '';
+		height: 18px;
+		z-index: -1;
+	}
+}

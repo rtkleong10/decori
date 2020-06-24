@@ -1,0 +1,24 @@
+.snapshot {
+	@extend .container;
+	@extend .grid;
+	margin-bottom: 80px;
+
+	.snapshot-text {
+		margin-top: 100px;
+		grid-column: span 5;
+		order: 1;
+	}
+
+	.snapshot-img {
+		width: 100%;
+		grid-column: span 7;
+		border: 10px solid $white;
+		box-shadow: $raised-shadow;
+	}
+
+	&:nth-child(even) {
+		.snapshot-text {
+			order: 0;
+		}
+	}
+}

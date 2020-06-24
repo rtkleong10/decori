@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, p {
+	margin: 0;
+	padding: 0;
+}
+
+img, a {
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	font: $link-font;
+	color: $black;
+	border-bottom: $black-border;
+	border-bottom-color: rgba($black, 0);
+	@include ease-transition;
+	
+	&:hover, &:focus {
+		border-bottom-color: $black;
+	}
+}
+
+h1 {
+	font: $h1-font;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font: $h2-font;
+	margin-bottom: 20px;
+}
+
+p {
+	font: $p-font;
+}

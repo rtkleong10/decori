@@ -1,0 +1,19 @@
+.crane-divider {
+	@extend .container;
+	@extend .grid;
+	align-items: center;
+	margin-bottom: 200px;
+
+	.crane-divider-img {
+		grid-column: span 2;
+	}
+
+	&::before, &::after {
+		content: "";
+		display: block;
+		height: 6px;
+		background-color: $dark-red;
+		width: 100%;
+		grid-column: span 5;
+	}
+}

@@ -1,0 +1,15 @@
+.nav-bar {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	.nav-logo {
+		border-bottom: none;
+	}
+
+	.nav-bar-right > * {
+		margin-left: 30px;
+	}
+}

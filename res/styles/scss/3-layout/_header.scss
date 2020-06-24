@@ -1,0 +1,20 @@
+.header-txt {
+	margin: 200px 0;
+	text-align: center;
+}
+
+.header-with-img {
+	@extend .container;
+	@extend .grid;
+	margin: 200px 0;
+	align-items: center;
+
+	> div {
+		grid-column: 2 / span 6;
+	}
+
+	> img {
+		grid-column: span 4;
+		width: 100%;
+	}
+}

@@ -1,0 +1,22 @@
+.btn {
+	border: $black-border;
+	color: $black;
+	padding: 10px 20px;
+	font: $link-font;
+	@include ease-transition;
+
+	&:hover, &:focus {
+		background-color: $black;
+		color: $white;
+	}
+
+	&.btn-white {
+		border-color: $white;
+		color: $white;
+
+		&:hover, &:focus {
+			background-color: $white;
+			color: $black;
+		}
+	}
+}
