@@ -35,6 +35,10 @@
 	}
 
 	@include media-breakpoint-down('md') {
+		.banner-img {
+			height: 400px;
+		}
+
 		.banner-body {
 			grid-column: span 12;
 		}
