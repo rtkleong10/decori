@@ -9,7 +9,22 @@
 		border-bottom: none;
 	}
 
-	.nav-bar-right > * {
-		margin-left: 30px;
+	.nav-bar-right > :not(:last-child) {
+		margin-right: 30px;
+	}
+
+	@include media-breakpoint-down('md') {
+		.nav-bar-right > :not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+
+	@include media-breakpoint-down('sm') {
+		flex-direction: column;
+		align-items: flex-start;
+
+		.nav-logo {
+			margin-bottom: 10px;
+		}
 	}
 }

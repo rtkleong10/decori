@@ -4,9 +4,8 @@
 	margin-bottom: 80px;
 
 	.snapshot-text {
-		margin-top: 100px;
+		margin-top: 80px;
 		grid-column: span 5;
-		order: 1;
 	}
 
 	.snapshot-img {
@@ -18,7 +17,21 @@
 
 	&:nth-child(even) {
 		.snapshot-text {
-			order: 0;
+			order: -1;
+		}
+	}
+
+	@include media-breakpoint-down('lg') {
+		display: block;
+		
+		.snapshot-text {
+			margin-top: 20px;
+		}
+	}
+
+	@include media-breakpoint-down('sm') {
+		.snapshot-img {
+			border-width: 5px;
 		}
 	}
 }

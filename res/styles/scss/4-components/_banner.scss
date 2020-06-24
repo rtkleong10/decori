@@ -21,4 +21,28 @@
 			grid-column: 7 / span 6;
 		}
 	}
+
+	@include media-breakpoint-down('lg') {
+		.banner-body {
+			grid-column: span 8;
+		}
+	
+		&:nth-of-type(odd) {
+			.banner-body {
+				grid-column: 5 / span 8;
+			}
+		}
+	}
+
+	@include media-breakpoint-down('md') {
+		.banner-body {
+			grid-column: span 12;
+		}
+	
+		&:nth-of-type(odd) {
+			.banner-body {
+				grid-column:span 12;
+			}
+		}
+	}
 }
