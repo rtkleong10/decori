@@ -2,6 +2,7 @@
 	border: $black-border;
 	color: $black;
 	padding: 10px 20px;
+	background-color: transparent;
 	font: $link-font;
 	@include ease-transition;
 

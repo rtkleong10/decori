@@ -1,5 +1,7 @@
-$playfair-display: 'Playfair Display', serif;
-$open-sans: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap');
+
+$playfair-display: 'Playfair Display', "Times New Roman", Times, serif;
+$open-sans: "Open Sans", "Segoe UI", Tahoma, sans-serif;
 
 $h1-font: 700 36px $playfair-display;
 $h2-font: 700 32px $playfair-display;
